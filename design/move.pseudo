@@ -9,17 +9,30 @@
 
 # TODO 1: Identify the information the movement process needs.
 # Consider the player's current room and movement command.
+Current Room: Main Hall
+Movement command: Go West
 
 # TODO 2: Prompt for and receive the player's movement command.
+INPUT movement
 
 # TODO 3: Validate whether the requested movement is possible from the
 # current room. Show the decision clearly.
 
+
 # TODO 4: Describe what happens when the movement command is valid.
 # Include the room update and player output.
+IF movement is valid from current room
+  SET current room to room in desired direction
 
 # TODO 5: Describe what happens when the movement command is invalid.
 # Include the output the player should receive.
+ELSE display 'Invalid movement.'
 
 # TODO 6: Show how movement fits into repeated gameplay.
 # The final game continues accepting commands until a required ending occurs.
+WHILE current room is not Dark Chamber
+  CONTINUE playing game
+IF player collects all 8 items
+  DISPLAY 'Hooray! You've defeated Michael Jackson'
+ELSE
+  DISPLAY 'Oh no, you were turned into a demon servant for Michael Jackson'
