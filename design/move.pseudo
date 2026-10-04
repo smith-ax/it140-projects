@@ -17,7 +17,7 @@ INPUT movement
 
 # TODO 3: Validate whether the requested movement is possible from the
 # current room. Show the decision clearly.
-
+IF current room = desired room/ valid direction
 
 # TODO 4: Describe what happens when the movement command is valid.
 # Include the room update and player output.
